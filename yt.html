@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>youtube</title>
+    <style>
+        .img1{
+            position: relative;
+            left:20px;
+        }
+        .img2{
+position: relative;
+left: 50px;
+        }
+        .input1{
+            position: relative;
+            left:220px;
+            width: 550px;
+            border-radius: 20px;
+            padding: 10px;
+            font-size:15px;
+        }
+        .img3{
+            position: relative;
+            left:180px;
+            top:10px;
+        }
+        .img4{
+            position: relative;
+            left:200px;
+            top:5px;
+        }
+        #img5{
+            position: relative;
+            left:330px;
+            top:5px;
+        }
+        #img6{
+            position: relative;
+            left:350px;
+            top:5px;
+        }
+        #img7{
+            position: relative;
+            left:380px;
+            top:8px;
+        }
+        #ul1{
+            position: relative;
+            right:20px;
+display:grid;
+flex-direction: column; /*display images vertically */
+list-style: none;
+        }
+        .para1{
+            position:relative;
+            right:5px;
+            font-size: 12px;
+            bottom:10px;
+        }
+        .para2{
+            position:relative;
+            right:5px;
+            font-size: 12px;
+            bottom:10px;  
+        }
+        .para3{
+            position:relative;
+            right:20px;
+            font-size: 12px;
+            bottom:10px;
+        }
+        .para4{
+            position:relative;
+            right:5px;
+            font-size: 12px;
+            bottom:10px;
+        }
+.options{
+    position: relative;
+    left:100px;
+    bottom:350px;
+    width: calc(100% - 220px);
+    height:20px;
+    background-color: #fff;    
+    padding:20px;
+    display: flex;
+    align-items: center;
+    overflow-x:scroll;
+}
+.options::-webkit-scrollbar{
+    display: none;
+}
+.optns{
+    flex:0 0 auto;
+    padding: 10px 15px;
+    border-radius:15px;
+    background: #f0f0f0;
+    border: 1px solid #dbdbdb;
+    text-transform: capitalize;
+    margin-right:10px;
+    color: #242424;
+    font-size: 13px;
+    cursor: pointer;
+}
+.optns.active{
+    color:#fff;
+    background-color: #242424;
+    }
+.video1{
+    position: relative;
+    bottom: 320px;
+    left:100px;
+    border-radius: 15px;
+
+}
+.video1:hover{
+    border-radius:0%;
+}
+.video2{
+    position: relative;
+    bottom:320px;
+    left:120px;
+    border-radius: 15px;
+}
+.video2:hover{
+    border-radius: 0%;
+}   
+.div1{
+    display: flex;
+    
+}
+.video3{
+    position: relative;
+    bottom: 320px;
+    left:140px;
+    border-radius: 15px;
+}
+.video3:hover{
+    border-radius:0%;
+}
+.img8{
+    position: relative;
+    bottom:313px;
+    left:430px;    
+}
+.img9{
+    position: relative;
+    bottom:315px;
+    left:770px;   
+}
+.img10{
+    position: relative;
+    bottom:315px;
+    left:1110px;    
+}
+.img11{
+    border-radius: 20px;
+    position: relative;
+    bottom:340px;
+    left:100px;
+}
+.img12{
+    border-radius: 20px;
+    position: relative;
+    bottom:340px;
+    left:425px;
+}
+.img13{
+    border-radius: 20px;
+    position: relative;
+    bottom:340px;
+    left:745px;
+}
+.para5{
+    position: relative;
+    bottom:395px;
+    left:150px;
+    font-size:15px;
+}
+.para6{
+    position: relative;
+    bottom:410px;
+    left:150px;
+    font-size: 15px;
+}
+.para7{
+    position: relative;
+    bottom:420px;
+    left:150px;
+    font-size: 15px; 
+    color:gray;
+}
+.para8{
+    position: relative;
+    bottom:430px;
+    left:150px;
+    font-size: 15px;
+    color:grey;
+}
+.para9{
+    position: relative;
+  bottom:540px;
+  left:520px;
+  font-size: 15px;
+}
+.para10{
+    position: relative;
+  bottom:555px;
+  left:520px;
+  font-size: 15px;
+}
+.para11{
+    position: relative;
+  bottom:565px;
+  left:520px;
+  font-size: 17px;
+  color: grey;
+}
+.para12{
+    position: relative;
+  bottom:580px;
+  left:520px;
+  font-size: 15px;
+  color:grey;
+}
+.para13{
+    position: relative;
+  bottom:688px;
+  left:880px;
+  font-size: 15px;
+}
+.para14{
+    position: relative;
+  bottom:700px;
+  left:880px;
+  font-size: 15px;
+}
+.para15{
+position: relative;
+  bottom:710px;
+  left:880px;
+  font-size: 17px;
+  color:grey;
+}
+.para16{
+position: relative;
+  bottom:725px;
+  left:880px;
+  font-size: 15px;
+  color:grey;
+}
+.div3{
+    display: flex;
+}
+.video4{
+    position: relative;
+    bottom: 680px;
+    left:100px;
+    border-radius: 15px;
+
+}
+.video4:hover{
+    border-radius:0%;
+}
+.video5{
+    position: relative;
+    bottom: 680px;
+    left:120px;
+    border-radius: 15px;
+
+}
+.video5:hover{
+    border-radius:0%;
+}
+.video6{
+    position: relative;
+    bottom: 680px;
+    left:140px;
+    border-radius: 15px;
+}
+.video6:hover{
+    border-radius: 0%;
+}
+.img14{
+    position: relative;
+    bottom:670px;
+    left:430px;    
+}
+.img15{
+    
+    position: relative;
+    bottom:670px;
+    left:770px;   
+}
+.img16{
+    
+    position: relative;
+    bottom:670px;
+    left:1110px;    
+}
+.img17{
+    border-radius: 20px;
+    position: relative;
+    bottom:700px;
+    left:100px;
+}
+.img18{
+    border-radius: 20px;
+    position: relative;
+    bottom:700px;
+    left:425px;
+}
+.img19{
+    border-radius: 20px;
+    position: relative;
+    bottom:700px;
+    left:745px;
+}
+.para17{
+    position: relative;
+    bottom:755px;
+    left:150px;
+    font-size: 15px;
+}
+.para18{
+    position: relative;
+    bottom:770px;
+    left:150px;
+    font-size: 15px;
+}
+.para19{
+    position: relative;
+    bottom:780px;
+    left:150px;
+    font-size: 17px;
+    color: gray;
+}
+.para20{
+    position: relative;
+    bottom:790px;
+    left:150px;
+    font-size: 15px;
+    color:gray;
+}
+.para21{
+    position: relative;
+    bottom:905px;
+    left:520px;
+    font-size: 15px;
+}
+.para22{
+    position: relative;
+    bottom:920px;
+    left:520px;
+    font-size: 15px;
+}
+.para23{
+    position: relative;
+    bottom:930px;
+    left:520px;
+    font-size: 17px;
+    color:grey;
+}
+.para24{
+    position: relative;
+    bottom:940px;
+    left:520px;
+    font-size: 15px;
+    color:grey;
+}
+.para25{
+position: relative;
+bottom:1055px;
+left:880px;
+font-size: 15px;
+}
+.para26{
+    position: relative;
+    bottom: 1070px;
+    left:880px;
+    font-size: 15px;
+}
+.para27{
+    position: relative;
+    bottom: 1080px;
+    left:880px;
+font-size: 17px;
+color: grey;
+}
+.para28{
+    position: relative;
+    bottom:1090px;
+    left:880px;
+    font-size: 15px;
+    color:grey;
+}
+.container{
+    overflow-y: scroll;
+}
+    </style>
+</head>
+<body>
+    <img  class="img1" src="./images/menu.jpg" height="20" width="20">
+    <img class="img2" src="./images/youtube1.jpg" height="25" width="110">
+    <input  class="input1" type="text" placeholder="search">
+    <img class="img3" src="./images/search icon.jpg" width="25" height="25">
+    <img class="img4" src="./images/voice search.jpg" width="18" height="23">
+    <img id="img5" src="./images/create.jpg" width="25" height="25">
+    <img id="img6" src="./images/notification.jpg" width="20" height="25">
+    <img id="img7" src="./images/account.jpg" width="35" height="35">
+
+    <ul id="ul1">
+    <li><img src="./images/home.jpg" width="21" height="25"></li>
+   <p class="para1">Home</p>
+    <br>
+   <li><img src="./images/shorts.jpg" width="20" height="25"></li>
+   <p class="para2">Shorts</p>
+   <br>
+   <li><img src="./images/subscription.jpg" width="20" height="25"></li>
+   <p class="para3">Subscriptions</p>
+   <br>
+<li><img src="./images/library.jpg" height="25" width="24"></li>
+<p class="para4">library</p>
+    </ul>
+
+    <div class="options">
+        <button class="optns active">All</button>
+        <button class="optns">Music</button>
+        <button class="optns">Mixes</button>
+        <button class="optns">Live</button>
+        <button class="optns">Filmi</button>
+        <button class="optns">Rajinikant</button>
+        <button class="optns">Tamil Cinema</button>
+        <button class="optns">Game shows</button>
+        <button class="optns">Blessings</button>
+        <button class="optns">Crowds</button>
+        <button class="optns">Computer programming</button>
+        <button class="optns">Gaming</button>
+        <button class="optns">Bhajan music</button>
+        <button class="optns">Jethalal Champahlal Gada</button>
+        <button class="optns">News</button>
+        <button class="optns">Tourist destinations</button>
+        <button class="optns">Recent uploaded</button>
+        <button class="optns">New to you</button>
+        </div>
+    </div>
+
+
+        <div class="div1">
+    <iframe  class="video1"           width="345" height="225" src="https://www.youtube.com/embed/NkxmvLUfvss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe  class="video2"           width="345" height="225" src="https://www.youtube.com/embed/85pxLuuPtEA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe   class="video3"         width="345" height="225" src="https://www.youtube.com/embed/bddFZkcoLHI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+    </div>
+
+    <div class="div2">
+        <img class="img8"         src="./images/3dots.jpg" width="20" height="20">
+        <img class="img9"         src="./images/3dots.jpg" width="20" height="20">
+        <img class="img10"         src="./images/3dots.jpg" width="20" height="20">
+    </div>
+   
+   <div id="id1">
+<img class="img11" src="./images/svara.jpg" height="40" width="40">
+<img class="img12" src="./images/geeta arts.jpg" height="40" width="40">
+<img class="img13" src="./images/zee cenema.jpg" height="40" width="40">
+   </div>
+
+   <div id="id2">
+<h2><p class="para5">Andala Aparanji | Love Failure Song 4K |</p></h2>
+<h2><p class="para6">Ramu | Laxman | Kalyan Keys| Akshith...</p></h2>
+<p class="para7">SVARA MUSIC</p>
+<P class="para8"> 29M Views . 1 year ago</P>
+<h2><p class="para9">Jalsa Telugu Movie Back To Back</p> </h2>
+<h2><p class="para10">Comedy || Pawan Kalyan, Ileana,...</p></h2>
+<p class="para11">Geetha Arts</p>
+<p class="para12">6.4M Views . 7 years ago</p>
+<h2><p class="para13">Adhirindi EP-10 | Gully Boyz | Zee Telugu |</p>
+<p class="para14">Adhirindi Every Sunday at 9 PM </p></h2>
+<p class="para15">Zee Cinemalu</p>
+ <p class="para16">1.3 Crore Views . 3 years ago</p>
+</div>
+
+<div class="div3">
+    <iframe  class="video4"             width="345" height="225" src="https://www.youtube.com/embed/4ul3q-cEhvU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe    class="video5"            width="345" height="225" src="https://www.youtube.com/embed/lshQKEpvm6c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe    class="video6"            width="345" height="225" src="https://www.youtube.com/embed/YE6LE9cwhXc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+<div id="div4">
+<img   class="img14"      src="./images/3dots.jpg" width="20"  height="20">
+<img   class="img15"     src="./images/3dots.jpg" width="20" height="20">
+<img   class="img16"      src="./images/3dots.jpg" width="20" height="20">
+</div>
+
+<div id="div5">
+<img class="img17" src="./images/code traversal.jpg" width="40" height="40">
+<img class="img18" src="./images/starmaa.jpg" width="40" height="40">
+<img class="img19" src="./images/suntv.jpg" width="40" height="40">
+</div>
+
+<div id="div6">
+    <h2><p class="para17">How to Create Analog Clock using HTML</p></h2>
+    <h2><p class="para18"> CSS and JavaScript</p></h2>
+    <p class="para19">Code Traversal</p>
+    <p class="para20">225K Views . 5 months ago</p>
+    <h2><p class="para21">Saddam Non-Stop Comedy | Comedy</p></h2>
+   <h2><p class="para22">Stars | Back to Back Comedy | 3.3M+ |...</p></h2>
+   <p class="para23">Star Maa</p>
+   <p class="para24">4.4M Views . 7 months ago</p>
+   <h2><p class="para25">Melting medleys of DnA | </p></h2>
+   <h2><p class="para26">Thiruchitrambalam Audio Launch |...</p></h2>
+   <p class="para27">Sun TV</p>
+   <p class="para28">24M Views . 1 year ago</p>
+</div>
+
+</body> 
+</html>
